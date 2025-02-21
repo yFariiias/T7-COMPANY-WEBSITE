@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #000000;
+}
+
+.main-content {
+    text-align: center;
+    flex-direction: column;
+    padding: 200px;
+    background-color: #fff;
+}
+
+.explore-projects {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.explore-projects h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 0 10px;
+    text-align: left;
+}
+
+.project img {
+    width: 220px;
+    height: 288px;
+    border-radius: 0px;
+    transition: transform 1.3s ease;
+    object-fit: cover;
+}
+
+.project:hover img {
+    transform: scale(1.02); 
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.explore-games-button {
+    background-color: transparent;
+    color: #e6bb2d;
+    border: 2px solid #e6bb2d;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.explore-games-button:hover {
+    background-color: #ffba43;
+    color: #fff;
+    border-color: #ffba43;
+}
+
+.project__icons {
+    margin-top: 3px;
+}
+
+.project__icons i {
+    font-size: 15px;
+    margin-right: 3px;
+    color: #fff;
+} 
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        margin: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header__social {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        margin: 10px 0;
+    }
+
+    .project img {
+        width: 100%;
+        max-width: 220px;
+        height: 288px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+    }
+
+    .explore-projects h2 {
+        font-size: 24px;
+    }
+
+    .explore-games-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
