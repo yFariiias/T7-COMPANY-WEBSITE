@@ -27,7 +27,6 @@ main {
     padding-top: 80px;
 }
 
-/* Logo */
 .logo img {
     max-width: 65px;
     transition: transform 1s ease, filter 3s ease;
