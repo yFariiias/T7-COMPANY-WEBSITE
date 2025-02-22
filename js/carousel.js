@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dotsContainer = document.querySelector('.carousel__dots');
     let currentIndex = 0;
 
-    // Cria os dots de navegação
     carouselItems.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('carousel__dot');
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const offset = -currentIndex * 100;
         carouselContainer.style.transform = `translateX(${offset}%)`;
 
-        // Atualiza o dot ativo
         dots.forEach((dot, index) => {
             if (index === currentIndex) {
                 dot.classList.add('carousel__dot--active');
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Opcional: Autoplay
     let autoplayInterval = setInterval(() => {
         if (currentIndex < carouselItems.length - 1) {
             currentIndex++;
