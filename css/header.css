@@ -23,6 +23,19 @@ header.show {
     opacity: 1;
 }
 
+header.page-active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li a.active {
+    color: #e6bb2d;
+}
+
+nav ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 main {
     padding-top: 80px;
 }
