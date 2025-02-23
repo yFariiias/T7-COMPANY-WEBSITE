@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="icon" type="image/png" href="images/t7-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -19,26 +20,57 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Projetos</a></li>
+                <li class="dropdown">
+                    <a href="#" id="projetos-link">
+                        Projetos <i id="projetos-icon" class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="overlay"></div>
+                        <div class="dropdown-header">
+                            <h2>Nossos Projetos</h2>
+                        </div>
+                        <div class="projects-container">
+                            <div class="project-item">
+                                <img src="images/gta6.png" alt="Projeto 1">
+                                <p>Projeto 1</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/gta6.png" alt="Projeto 2">
+                                <p>Projeto 2</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/gta6.png" alt="Projeto 3">
+                                <p>Projeto 3</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/gta6.png" alt="Projeto 4">
+                                <p>Projeto 4</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/gta6.png" alt="Projeto 5">
+                                <p>Projeto 5</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-text">
+                            <a href="projetos.html">MAIS PROJETOS <i class="fa-solid fa-angle-right"></i> </a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Novidades</a></li>
                 <li><a href="#">Loja</a></li>
                 <li><a href="#">Downloads</a></li>
-                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Equipe <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             </ul>
         </nav>
-        <div class="header__social"> 
+        <div class="header__social">
             <a class="icon__social-link" href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a class="icon__social-link" href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a class="icon__social-link" href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        </div>        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
         </div>
     </header>
-
-    <!-- BANNER -->
+    
+    
+<!--======================================================== Banner  =========================================================-->
 
     <main>
     <section class="carousel">
@@ -80,6 +112,9 @@
     </section>
    </main>   
 
+   <!--======================================================== Boas-vindas  =========================================================-->
+
+
    <div class="main-content hidden">
     <div class="text-content fade-in2">
         <h1>SOBRE A T7 COMPANY!</h1>
@@ -93,7 +128,8 @@
 
    
     
-    <!-- PROJETOS -->
+<!--======================================================== PROJETOS  =========================================================-->
+
     <section class="explore-projects hidden">
         <h2>NOSSOS PROJETOS</h2>
         <div class="project-list">
@@ -155,6 +191,7 @@
         <a href="#" class="explore-games-button">Ver todos os Projetos</a>
     </section>
     
+    <!--======================================================== FOOTER   =========================================================-->
 
     <footer class="footer" role="navigation" title="Footer">
 
@@ -206,6 +243,7 @@
 <script src="js/carousel.js"></script>
 <scrip src="js/hamburger.js"></script>
 <script src="js/animações.js"></script>
+<script src="js/dropdown.js"></script>
 
 <script>
 </script>
