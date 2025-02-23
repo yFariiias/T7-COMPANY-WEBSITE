@@ -6,11 +6,48 @@ body {
 }
 
 .main-content {
-    text-align: left;
-    flex-direction: column;
-    padding: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
     color: #000000;
     background-color: #fff;
+}
+
+.text-content {
+    max-width: 650px;
+}
+
+.main-content p {
+    white-space: pre-line;
+}
+
+.image-container {
+    position: relative;
+    width: 950px;
+    height: 400px;
+}
+
+.default-image,
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.9s ease;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.image-container:hover .default-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
 }
 
 .explore-projects {
