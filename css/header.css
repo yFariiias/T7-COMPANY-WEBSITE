@@ -179,4 +179,8 @@ nav ul li a:hover::after {
     .header__social.active .icon__social-link {
         margin: 0 10px;
     }
+
+    .menu-toggle {
+        display: none;
+    }
 }
