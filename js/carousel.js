@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const dotsContainer = document.querySelector('.carousel__dots');
     let currentIndex = 0;
 
+    // Cria os dots de navegação
     carouselItems.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('carousel__dot');
-        dot.addEventListener('click', () => {a
+        dot.addEventListener('click', () => {
             currentIndex = index;
             updateCarousel();
         });
