@@ -206,11 +206,11 @@ body {
 
 @media (min-width: 769px) {
     .image-container:hover .default-image {
-        display: none;
+        display: ;
     }
 
     .image-container:hover .hover-image {
-        display: none;
+        display: ;
     }
 }
 
