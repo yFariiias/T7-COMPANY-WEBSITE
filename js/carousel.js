@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselItems.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('carousel__dot');
-        dot.addEventListener('click', () => {
+        dot.addEventListener('click', () => {a
             currentIndex = index;
             updateCarousel();
         });
