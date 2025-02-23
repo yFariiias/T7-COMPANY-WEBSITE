@@ -9,13 +9,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px;
+    padding: 80px;
     color: #000000;
     background-color: #fff;
 }
 
 .text-content {
     max-width: 650px;
+}
+
+.main-content p {
+    white-space: pre-line;
+}
+
+.fade-in2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in2.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .main-content p {
@@ -184,6 +199,33 @@ body {
     .explore-games-button {
         font-size: 14px;
         padding: 10px 20px;
+    }
+}
+
+/* LEMBRAR DE ATUALIZAR DEPOIS ESSA PARTE PARA FICAR VISIVEL EM OUTROS DISPOSITIVOS */
+
+@media (min-width: 769px) {
+    .image-container:hover .default-image {
+        display: none;
+    }
+
+    .image-container:hover .hover-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+
+    .default-image,
+    .hover-image {
+        display: none;
+    }
+
+    .hover-image {
+        display: none;
     }
 }
 
