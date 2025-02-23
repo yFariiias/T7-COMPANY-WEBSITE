@@ -204,16 +204,6 @@ body {
 
 /* LEMBRAR DE ATUALIZAR DEPOIS ESSA PARTE PARA FICAR VISIVEL EM OUTROS DISPOSITIVOS */
 
-@media (min-width: 769px) {
-    .image-container:hover .default-image {
-        display: ;
-    }
-
-    .image-container:hover .hover-image {
-        display: ;
-    }
-}
-
 @media (max-width: 768px) {
     .image-container {
         display: none;
@@ -225,6 +215,14 @@ body {
     }
 
     .hover-image {
+        display: none;
+    }
+
+    .image-container:hover .default-image {
+        display: none;
+    }
+
+    .image-container:hover .hover-image {
         display: none;
     }
 }
