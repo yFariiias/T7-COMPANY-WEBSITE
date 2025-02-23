@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex = 0;
         }
         updateCarousel();
-    }, 10000);
+    }, 5000);
 
     carouselContainer.addEventListener('mouseenter', () => {
         clearInterval(autoplayInterval);
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentIndex = 0;
             }
             updateCarousel();
-        }, 5000);
+        }, 10000);
     });
 
     updateCarousel();
