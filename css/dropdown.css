@@ -147,23 +147,23 @@ nav ul li a {
 
 @media (max-width: 1440px) {
     .projects-container {
-        gap: 15px; /* Reduzir o espaçamento entre os itens */
-        padding: 5px; /* Reduzir o padding interno */
+        gap: 5px;
+        padding: 5px;
     }
 
     .project-item {
-        width: calc(33.333% - 20px); /* Ajustar a largura para 3 itens por linha */
+        width: calc(33.333% - 20px);
     }
 }
 
 @media (max-width: 1024px) {
     .project-item {
-        width: calc(50% - 20px); /* Ajustar a largura para 2 itens por linha */
+        width: calc(50% - 20px);
     }
 }
 
 @media (max-width: 768px) {
     .project-item {
-        width: 100%; /* Um item por linha em telas muito pequenas */
+        width: 100%;
     }
 }
