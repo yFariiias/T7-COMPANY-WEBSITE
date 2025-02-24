@@ -8,14 +8,15 @@ body {
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 80px;
+    justify-content: center;
+    padding: 40px;
     color: #000000;
-    background-color: #fff;
+    background-color: #f0f3f4;
 }
 
 .text-content {
-    max-width: 650px;
+    max-width: 500px;
+    margin-left: 0px;
 }
 
 .main-content p {
@@ -37,37 +38,44 @@ body {
     white-space: pre-line;
 }
 
-.image-container {
-    position: relative;
-    width: 950px;
-    height: 400px;
+.gallery {
+    --g: 5px;
+    display: grid;
+    width: 450px;
+    aspect-ratio: 1;
+    grid: auto-flow 1fr / repeat(3, 1fr);
+    gap: var(--g);
 }
 
-.default-image,
-.hover-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+.gallery img {
     width: 100%;
     height: 100%;
-    transition: opacity 0.9s ease;
+    object-fit: cover;
+    filter: grayscale();
+    cursor: default;
+    transition: .5s;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
 }
 
-.hover-image {
-    opacity: 0;
+.gallery img:hover {
+    filter: grayscale(0);
 }
 
-.image-container:hover .default-image {
-    opacity: 0;
+.gallery img:nth-child(2) {
+    grid-area: 1/2/span 2/span 2;
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + var(--g)/4) 100%,0 calc(50% - var(--g)/4));
 }
 
-.image-container:hover .hover-image {
-    opacity: 1;
+.gallery img:nth-child(3) {
+    grid-area: 2/1/span 2/span 2;
+    clip-path: polygon(0 0,calc(50% - var(--g)/4) 0,100% calc(50% + var(--g)/4),100% 100%,0 100%);
 }
 
 .explore-projects {
-    background-color: #000000;
-    color: #fff;
+    background-color: #050505;
+    color: #f0f3f4;
     padding: 100px 0;
     text-align: center;
 }
@@ -89,8 +97,8 @@ body {
 }
 
 .project img {
-    width: 220px;
-    height: 288px;
+    width: 225px;
+    height: 280px;
     border-radius: 0px;
     transition: transform 1.3s ease;
     object-fit: cover;
@@ -111,7 +119,7 @@ body {
 
 .explore-games-button {
     background-color: transparent;
-    color: #eeeeee;
+    color: #f0f3f4;
     border: 1px solid #e6bb2d;
     padding: 12px 24px;
     font-size: 16px;
@@ -130,13 +138,13 @@ body {
 }
 
 .project__icons {
-    margin-top: 3px;
+    margin-top: 8px;
 }
 
 .project__icons i {
     font-size: 15px;
     margin-right: 3px;
-    color: #fff;
+    color: #f0f3f4;
 } 
 
 @media (max-width: 768px) { 
@@ -181,6 +189,24 @@ body {
         max-width: 220px;
         height: 288px;
     }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .gallery {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -199,31 +225,6 @@ body {
     .explore-games-button {
         font-size: 14px;
         padding: 10px 20px;
-    }
-}
-
-/* LEMBRAR DE ATUALIZAR DEPOIS ESSA PARTE PARA FICAR VISIVEL EM OUTROS DISPOSITIVOS */
-
-@media (max-width: 768px) {
-    .image-container {
-        display: none;
-    }
-
-    .default-image,
-    .hover-image {
-        display: none;
-    }
-
-    .hover-image {
-        display: none;
-    }
-
-    .image-container:hover .default-image {
-        display: none;
-    }
-
-    .image-container:hover .hover-image {
-        display: none;
     }
 }
 

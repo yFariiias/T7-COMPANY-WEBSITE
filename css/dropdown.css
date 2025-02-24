@@ -24,11 +24,11 @@ nav ul li a {
 
 .dropdown-content {
     position: fixed;
-    top: 60px;
+    top: 65px;
     left: 0;
     width: 100%;
     height: calc(72vh - 30px);
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.973);
     z-index: 999;
     overflow-x: auto;
     padding: 0 80px;
@@ -113,7 +113,6 @@ nav ul li a {
 
 .header__social {
     display: flex;
-    gap: 10px;
 }
 
 .icon__social-link {
@@ -139,4 +138,18 @@ nav ul li a {
 
 .mais-projetos a:hover {
     color: #ccc;
+}
+
+@media (max-width: 1700px) {
+    .project-item {
+        max-width: 260px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .project-item {
+        max-width: 220px;
+        height: 280px;
+    }
 }

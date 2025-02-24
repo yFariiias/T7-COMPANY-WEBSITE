@@ -40,6 +40,10 @@ main {
     padding-top: 80px;
 }
 
+.logo {
+    padding: 0 80px;
+}
+
 .logo img {
     max-width: 55px;
     transition: transform 1s ease, filter 3s ease;
@@ -59,7 +63,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav ul li {
@@ -102,7 +106,7 @@ nav ul li a:hover::after {
 
 .header__social {
     display: flex;
-    margin-left: -20px;
+    padding: 0 60px;
 }
 
 .icon__social-link {
