@@ -31,7 +31,7 @@ nav ul li a {
     background-color: rgba(0, 0, 0, 0.95);
     z-index: 999;
     overflow-x: auto;
-    padding: 20px;
+    padding: 0 80px;
     box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
