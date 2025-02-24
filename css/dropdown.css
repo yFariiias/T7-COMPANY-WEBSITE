@@ -7,7 +7,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 30px;
+    margin: 0 15px;
     position: relative;
 }
 
@@ -27,11 +27,13 @@ nav ul li a {
     top: 60px;
     left: 0;
     width: 100%;
+    max-width: 1440px;
     height: calc(72vh - 30px);
     background-color: rgba(0, 0, 0, 0.95);
     z-index: 999;
-    overflow-x: auto;
-    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
     box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
@@ -47,19 +49,19 @@ nav ul li a {
 
 .dropdown-header {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .dropdown-header h2 {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
 }
 
 .dropdown-text a {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     justify-content: flex-end;
     margin: 5px;
@@ -67,8 +69,9 @@ nav ul li a {
 
 .projects-container {
     display: flex;
-    gap: 20px;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
 }
 
 .project-item {
@@ -77,8 +80,8 @@ nav ul li a {
     border-radius: 0px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    height: 370px;
+    width: calc(33.333% - 20px);
+    height: 200px;
     flex-shrink: 0;
 }
 
@@ -96,7 +99,7 @@ nav ul li a {
     bottom: 10px;
     left: 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
     opacity: 0;
@@ -124,15 +127,15 @@ nav ul li a {
 
 .mais-projetos {
     text-align: right;
-    margin-top: -27vh;
-    padding-right: 20vw;
+    margin-top: -20vh;
+    padding-right: 10vw;
     position: relative;
 }
 
 .mais-projetos a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
