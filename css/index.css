@@ -41,7 +41,6 @@ body {
     position: relative;
     width: 950px;
     height: 400px;
-
 }
 
 .default-image,
@@ -112,7 +111,7 @@ body {
 
 .explore-games-button {
     background-color: transparent;
-    color: #ffffff;
+    color: #eeeeee;
     border: 1px solid #e6bb2d;
     padding: 12px 24px;
     font-size: 16px;
